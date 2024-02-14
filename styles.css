@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://www.shutterstock.com/image-vector/couple-lovers-on-bench-park-600nw-2033663546.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white; /* Cambiar el color del texto a blanco */
+}
+
+#flower h2 {
+  color: rgb(243, 57, 57); /* Cambiar el color del texto a blanco */
+}
+
+.button-container {
+  display: flex;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#siButton {
+  background-color: green;
+  color: white;
+}
+
+#noButton {
+  background-color: red;
+  color: white;
+}
+
+#flower {
+  display: none;
+}
+
+.firefly {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: yellow;
+  border-radius: 50%;
+  animation: flicker 2s infinite, moveFirefly 5s linear infinite;
+}
+
+#musicButtonContainer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+#musicButton {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#musicButton:hover {
+  background-color: darkred;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveFirefly {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(-10px, -10px);
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Quieres ser mi San Valentín? ❤️</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>¿Quieres ser mi San Valentín? ❤️</h1>
+  <div class="button-container">
+    <button id="siButton" onclick="aceptar()">Sí</button>
+    <button id="noButton" onclick="rechazar()">No</button>
+  </div>
+  <div id="flower">
+    <!-- El GIF se agregará aquí -->
+    <img id="gifImage" src="couple-love.gif" alt="GIF">
+    <h2>¡Feliz Día de San Valentín! 🌹❤️</h2>
+  </div>
+  <div id="musicButtonContainer">
+    <button id="musicButton" onclick="toggleAudio()">Reproducir música</button>
+  </div>
+
+  <!-- Reproductor de música -->
+  <audio id="backgroundAudio">
+    <source src="Jósean Log - Chachachá.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <script src="index.js"></script>
+</body>
+</html>
